@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.partners {
+  background: $brown-light;
+  padding-top: 30px;
+  padding-bottom: 55px;
+  @include for-tablet-landscape-down {
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+  @include for-phone-only {
+    padding-top: 31px;
+    padding-bottom: 52px;
+  }
+
+  .partners__heading {
+    margin-bottom: 31px;
+    @include for-tablet-landscape-down {
+      margin-bottom: 19px;
+    }
+    @include for-phone-only {
+      margin-bottom: 29px;
+    }
+  }
+
+  &-slider__container {
+    padding: 0 72px;
+    @include for-tablet-landscape-down {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @include for-phone-only {
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+  }
+
+  .slick-track {
+    @include flex($alignment: center);
+  }
+
+  .slick-slide {
+    @include flex($justification: center);
+    @include width-height(114px);
+    margin-left: 20px;
+    @include for-tablet-landscape-down {
+      margin-left: 10px;
+    }
+  }
+}

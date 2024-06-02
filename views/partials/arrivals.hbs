@@ -1,0 +1,23 @@
+<section class="section arrivals">
+  <h2 class="section__heading">new arrivals</h2>
+  <div class="section-slider section-slider__container arrivals-slider__container">
+    <button class="section-slider__prev-arrow arrivals-slider__prev-arrow">
+      <svg class="section-slider__prev-icon fill-arrow-color">
+        <use xlink:href="./assets/svg/sprite.svg#prev" />
+      </svg>
+    </button>
+    <div class="arrivals-slider">
+      <ul class="arrivals-slider__list">
+        {{#each data}}
+          {{> arrival data=data}}
+        {{/each}}
+      </ul>
+    </div>
+    <button class="section-slider__next-arrow arrivals-slider__next-arrow">
+      <svg class="section-slider__next-icon fill-arrow-color">
+        <use xlink:href="./assets/svg/sprite.svg#next" />
+      </svg>
+    </button>
+  </div>
+  {{> button}}
+</section>

@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.logo {
+  &-icon {
+    @include width-height(182px, 34px);
+  }
+
+  .logo-icon-color {
+    --fill-logo-color: #{$tomato};
+  }
+}

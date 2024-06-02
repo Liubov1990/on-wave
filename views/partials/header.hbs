@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="container header__inner">
+    {{> logo}}
+    {{> navigation data=navigationData}}
+    <div class="header__bar">
+      <svg class="header__bar-icon header__bar-icon-color">
+        <use xlink:href="./assets/svg/sprite.svg#search-icon" />
+      </svg>
+      <svg class="header__bar-icon header__bar-icon-color icon-line-styles">
+        <use xlink:href="./assets/svg/sprite.svg#profile-icon" />
+      </svg>
+      <div id="burger" class="header__burger header__burger--squeeze">
+        <div class="header__burger-box">
+          <div class="header__burger-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

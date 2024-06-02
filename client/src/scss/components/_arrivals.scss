@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.arrivals {
+  padding-bottom: 69px;
+  @include for-tablet-landscape-down {
+    padding-bottom: 49px;
+  }
+
+  &-slider__container {
+    padding: 0 65px;
+    margin-bottom: 35px;
+    @include for-tablet-landscape-down {
+      padding-left: 33px;
+      padding-right: 33px;
+      margin-bottom: 25px;
+    }
+    @include for-phone-only {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 41px;
+    }
+  }
+
+  .btn--black {
+    color: $black;
+    border-color: $black;
+
+    &:hover {
+      @extend %btn-hover;
+      color: $brown-light;
+    }
+  }
+
+  .slick-slide {
+    @include width-height(224px);
+    @include for-phone-only {
+      width: 299px;
+      max-height: 491px;
+    }
+  }
+}

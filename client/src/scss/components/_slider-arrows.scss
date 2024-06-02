@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.section-slider {
+  .fill-arrow-color {
+    --fill-arrow-color: #{$arrow-inactive};
+  }
+
+  &__prev-arrow,
+  &__next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    z-index: 100;
+    cursor: pointer;
+    @include for-phone-only {
+      display: none;
+    }
+
+    &:hover {
+      .fill-arrow-color {
+        --fill-arrow-color: #{$tomato-light};
+      }
+    }
+  }
+
+  &__prev-arrow {
+    left: 0;
+  }
+
+  &__next-arrow {
+    right: 0;
+  }
+
+  &__prev-icon,
+  &__next-icon {
+    @include width-height(40px, 74px);
+    @include for-tablet-landscape-down {
+      @include width-height(16px, 30px);
+    }
+  }
+}

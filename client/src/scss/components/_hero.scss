@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+.hero {
+  overflow: hidden;
+
+  .slick-slide {
+    overflow: hidden;
+  }
+
+  &-slider {
+    &__item {
+      position: relative;
+
+      .cta {
+        @include flex(column, center);
+        @include width-height(400px);
+        position: absolute;
+        top: 86px;
+        right: 74px;
+        gap: 5px;
+        z-index: 10;
+        @include for-tablet-landscape-down {
+          top: 44px;
+          right: 79px;
+          max-width: 220px;
+        }
+        @include for-phone-only {
+          top: 43px;
+          right: 6px;
+        }
+
+        &__title {
+          @include fonts($f-weight: $fw-bold, $t-transform: uppercase, $color: $brown-light);
+          text-align: center;
+          @include responsive-font(26, 50);
+          @include responsive-line-height(31.69, 60.95);
+          @include for-laptop-up {
+            font-size: 50px;
+            line-height: 1.219;
+          }
+          @include for-tablet-landscape-down {
+            margin-bottom: 11px;
+          }
+          @include for-tablet-portrait-down {
+            font-size: 26px;
+            line-height: 1.218;
+          }
+        }
+
+        &__btn {
+          margin-left: 11px;
+          @include for-tablet-landscape-down {
+            margin-left: 4px;
+          }
+          @include for-phone-only {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &__overlay {
+      @include width-height($full-width, $full-height);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $hero-overlay;
+    }
+
+    &__img {
+      @include responsive-image();
+      @include for-phone-only {
+        height: 384px;
+      }
+    }
+  }
+}

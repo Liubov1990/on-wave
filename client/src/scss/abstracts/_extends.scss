@@ -1,0 +1,6 @@
+@use './colors' as *;
+
+%btn-hover {
+  background: $tomato-light;
+  border-color: $tomato-light;
+}

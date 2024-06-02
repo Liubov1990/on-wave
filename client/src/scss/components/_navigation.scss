@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.nav {
+  @include flex($alignment: center, $justification: space-between);
+
+  &__link {
+    @include fonts($f-weight: $fw-medium);
+    @include responsive-font(16, 20);
+    @include responsive-line-height(19.5, 24.38);
+    @include transition(all 0.2s ease-in-out);
+    display: inline-block;
+    @include for-laptop-up {
+      font-size: 1.25rem;
+      line-height: 1.219;
+    }
+    @include for-tablet-portrait-down {
+      font-size: 1rem;
+      line-height: 1.218;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

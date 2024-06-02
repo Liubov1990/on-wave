@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "linkTo": "https://www.instagram.com",
+    "ariaLabel": "We on Instagram",
+    "linkTitle": "Instagram",
+    "svgLink": "./assets/svg/sprite.svg#instagram-icon",
+    "larger": false,
+    "lineStyles": false
+  },
+  {
+    "id": 2,
+    "linkTo": "https://www.facebook.com",
+    "ariaLabel": "We on Facebook",
+    "linkTitle": "Facebook",
+    "svgLink": "./assets/svg/sprite.svg#facebook-icon",
+    "larger": false,
+    "lineStyles": false
+  },
+  {
+    "id": 3,
+    "linkTo": "https://www.pinterest.com",
+    "ariaLabel": "We on Pinterest",
+    "linkTitle": "Pinterest",
+    "svgLink": "./assets/svg/sprite.svg#pinterest-icon",
+    "larger": false,
+    "lineStyles": false
+  },
+  {
+    "id": 4,
+    "linkTo": "https://www.twitter.com",
+    "ariaLabel": "We on Twitter",
+    "linkTitle": "Twitter",
+    "svgLink": "./assets/svg/sprite.svg#twitter-icon",
+    "larger": true,
+    "lineStyles": true
+  },
+  {
+    "id": 5,
+    "linkTo": "https://www.youtube.com",
+    "ariaLabel": "We on YouTube",
+    "linkTitle": "YouTube",
+    "svgLink": "./assets/svg/sprite.svg#youtube-icon",
+    "larger": true,
+    "lineStyles": true
+  }
+]

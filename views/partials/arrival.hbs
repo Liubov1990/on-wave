@@ -1,0 +1,10 @@
+<li class='arrivals-slider__item'>
+  {{#if inStock}}
+    <span class='arrivals-slider__label' data-stock='in stock'>in stock</span>
+  {{else}}
+    <span class='arrivals-slider__label' data-stock='sold'>sold</span>
+  {{/if}}
+  <img class='arrivals-slider__img' data-lazy='{{img}}' src='{{img}}' alt='Guitar' />
+  <h4 class='arrivals-slider__title'>{{name}}</h4>
+  <p class='arrivals-slider__price'>{{price}}</p>
+</li>

@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__main-content">
+        <div class="footer__show-on-tablet">
+          {{> logo }}
+        </div>
+        <div>
+        <div class="footer__show-on-laptop">
+          {{> logo }}
+        </div>
+         {{> navigation data=navigationData}}
+      </div>
+      <address class="footer__address">
+        <h3 class="footer__title">Contact Us</h3>
+        <div class="footer__social">
+          {{#each data}}
+            {{> socialIcon data=data}}
+          {{/each}}
+        </div>
+        <a href="tel:08003004040" aria-lable="Call us" class="footer__phone-number">0800 300 4040</a>
+      </address>
+    </div>
+    <p class="footer__copyright">&copy; Copyright 2022. All rights reserved.</p>
+  </div>
+</footer>

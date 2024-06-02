@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.custom-slider-dots {
+  @include flex();
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 38px;
+  @include for-tablet-landscape-down {
+    bottom: 11px;
+    gap: 20px;
+  }
+  @include for-phone-only {
+    bottom: 12px;
+    gap: 12px;
+  }
+
+  & li {
+    position: relative;
+
+    & button {
+      color: transparent;
+      background: transparent;
+      font-size: 0;
+      border: none;
+
+      &::before {
+        @include width-height(20px, 20px);
+        @include border-radius(50%);
+        content: '';
+        position: absolute;
+        background: $dot-inactive;
+        cursor: pointer;
+        @include for-tablet-landscape-down {
+          @include width-height(12px, 12px);
+        }
+      }
+    }
+
+    &.slick-active button::before {
+      background: $tomato-light;
+    }
+  }
+}

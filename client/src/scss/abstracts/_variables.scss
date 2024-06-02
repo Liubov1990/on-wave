@@ -1,0 +1,17 @@
+@use './colors' as *;
+
+$gfonts: ();
+
+$initial-fsz: 1rem;
+$fs-normal: normal;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$full-width: 100%;
+$full-height: 100%;
+
+$max-content-width: 1400;
+$min-content-width: 320px;
+
+$hero-overlay: linear-gradient(180deg, $black-rgba-084 0%, $grey-color-rgba-0 100%);

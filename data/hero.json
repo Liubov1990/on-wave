@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "discover new options",
+    "imgDesktop": "./assets/images/desktop/hero/slide-1.webp",
+    "imgTablet": "./assets/images/tablet/hero/slide-1.webp",
+    "imgMobile": "./assets/images/mobile/hero/slide-1.webp",
+    "altText": "Several guitars positioned one by one"
+  },
+  {
+    "id": 2,
+    "title": "expand your horizons",
+    "imgDesktop": "./assets/images/desktop/hero/slide-2.webp",
+    "imgTablet": "./assets/images/tablet/hero/slide-2.webp",
+    "imgMobile": "./assets/images/mobile/hero/slide-2.webp",
+    "altText": "Classic guitar with sea background"
+  },
+  {
+    "id": 3,
+    "title": "Find your own style",
+    "imgDesktop": "./assets/images/desktop/hero/slide-3.webp",
+    "imgTablet": "./assets/images/tablet/hero/slide-3.webp",
+    "imgMobile": "./assets/images/mobile/hero/slide-3.webp",
+    "altText": "Single red guitar in dark studio"
+  }
+]

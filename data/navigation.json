@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "ariaLabel": "Return to the Home Page",
+    "textContent": "Home"
+  },
+  {
+    "id": 2,
+    "ariaLabel": "Go to Catalog Page",
+    "textContent": "Catalog"
+  },
+  {
+    "id": 3,
+    "ariaLabel": "Go to News Page",
+    "textContent": "News"
+  },
+  {
+    "id": 4,
+    "ariaLabel": "Go to Contacts Page",
+    "textContent": "Contacts"
+  }
+]

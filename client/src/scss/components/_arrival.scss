@@ -1,0 +1,64 @@
+@use '../abstracts' as *;
+
+.arrivals-slider {
+  &__item {
+    @include flex(column, center, center);
+    @include border(1px, solid, $brown-light);
+    width: 100%;
+    margin-left: 20px;
+    box-sizing: border-box;
+    @include for-tablet-landscape-down {
+      margin-left: 15px;
+    }
+
+    &:hover {
+      @include transition(all 0.5s ease-in-out);
+      border-color: $tomato-light;
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    @include width-height(60px, 20px);
+    position: absolute;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $brown-light;
+    background-color: $tomato-light;
+
+    &[data-stock='sold'] {
+      color: $black;
+      background: $brown-light;
+    }
+  }
+
+  &__img {
+    margin: 21px auto 18px;
+    @include for-phone-only {
+      margin-top: 20px;
+      margin-bottom: 21px;
+      width: 84.5%;
+    }
+  }
+
+  &__title {
+    @include fonts($f-size: 1rem, $f-weight: $fw-semi-bold, $l-height: 1.218);
+    text-align: center;
+    padding: 0 8px;
+    margin-top: 18px;
+    margin-bottom: 7px;
+  }
+
+  &__price {
+    @include fonts($f-size: 1.5rem, $f-weight: $fw-bold, $l-height: 1.219);
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 19px;
+    @include for-phone-only {
+      margin-top: 10px;
+    }
+  }
+}

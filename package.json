@@ -1,0 +1,32 @@
+{
+  "name": "on-wave",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon --ext '*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liubov1990/on-wave.git"
+  },
+  "keywords": [],
+  "author": "Liubov1990",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liubov1990/on-wave/issues"
+  },
+  "homepage": "https://github.com/Liubov1990/on-wave",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  }
+}

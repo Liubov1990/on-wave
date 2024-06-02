@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.btn {
+  @include fonts($f-weight: $fw-bold, $t-transform: uppercase, $color: $brown-light);
+  @include width-height(227px, 52px);
+  @include responsive-font(16, 18);
+  @include responsive-line-height(19.5, 21.94);
+  @include border(2px, solid, $brown-light);
+  @include transition(background, border-color 0.5s ease-in-out);
+  text-align: center;
+  color: $brown-light;
+  background: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  @include for-laptop-up {
+    font-size: 18px;
+    line-height: 1.21;
+  }
+  @include for-tablet-landscape-down {
+    @include width-height(154px, 40px);
+  }
+  @include for-tablet-portrait-down {
+    font-size: 16px;
+    line-height: 1.218;
+  }
+
+  &:hover {
+    @extend %btn-hover;
+  }
+}
